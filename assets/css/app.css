@@ -105,6 +105,16 @@ img {
 }
 
 /* style index */
+body::before {
+    content: 'PARSOS.IR';
+    position: fixed;
+    bottom: 15px;
+    right: 50%;
+    transform: translate(50%,0);
+    opacity: .5;
+    z-index: -1;
+}
+
 .os-login {
     width: 420px;
     margin: 200px auto;
@@ -191,10 +201,40 @@ img {
 /* style index */
 
 /* style tickets */
+.content {
+    margin: 200px auto;
+}
+
+.top_tbl a,
+.top_tbl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.top_tbl a {
+    padding: 10px;
+    width: 9rem;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.top_tbl a:hover {
+    background: var(--secendary);
+    color: #ffffff;
+}
+
+.top_tbl + .os-border {
+    height: 2px;
+    display: block;
+    background: linear-gradient(90deg, transparent, var(--item) 40%, var(--item) 50%, var(--item) 70%, transparent 100%);
+    margin-bottom: 10px;
+}
+
 table {
     width: 100%;
     border-radius: 20px;
-    margin: 200px auto;
     padding: 20px;
     overflow: auto;
 }
