@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+    font-family: IRANS-medium, roboto, tahoma;
+}
+
+:root {
+    --bg: #f0f4f9;
+    --item: #ffffff;
+    --color: #252629;
+    --muted: #0a0c0f;
+    --des: #636d7f;
+    --secendary: #222c3f;
+    --orginal: #00ddff;
+    --pink: #f82672;
+    --green: #1ebb46;
+    --yellow: #d4c322;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: IRANS-medium;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/medium.woff') format('woff')
+}
+
+@font-face {
+    font-family: IRANS-bold;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: IRANS-light;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/light.woff') format('woff');
+}
+
+
+body {
+    direction: rtl;
+    font-family: IRANS-medium, roboto, tahoma;
+    background: var(--bg);
+    color: var(--color);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input::placeholder {
+    font-size: 11px;
+}
+
+input,
+textarea,
+select,
+option,
+button {
+    font-family: IRANS-medium, roboto, tahoma;
+    color: var(--color);
+}
+
+a {
+    color: var(--color);
+}
+
+img {
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.os-bold {
+    font-family: IRANS-bold, roboto, tahoma;
+}
+
+.os-light {
+    font-family: IRANS-light, roboto, tahoma;
+}
+
+.os-bg {
+    background: var(--bg);
+}
+
+.os-item {
+    background: var(--item);
+}
+
+/* style index */
+.os-login {
+    width: 420px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #d4deec70;
+}
+
+.os-login h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.os-login .os-border {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--bg) 40%, var(--bg) 50%, var(--bg) 70%, transparent 100%);
+}
+
+.os-login form {
+    margin-top: 40px;
+}
+
+.os-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.os-input label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.os-input input {
+    width: 100%;
+    font-size: 17px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.os-input input.error {
+    border-color: #eb759f;
+}
+
+.os-input .error_text {
+    color: #eb759f;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%,0);
+    bottom: -22px;
+    font-size: 11px;
+}
+
+.os-login form button.btn_log {
+    font-size: 18px;
+    padding: 14px;
+    width: 100%;
+    color: #fff;
+    background: var(--secendary);
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/* style index */
