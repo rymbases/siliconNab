@@ -113,6 +113,11 @@ img {
     box-shadow: 0 0 30px #d4deec70;
 }
 
+.os-login.upl {
+    width: 600px;
+    margin: 70px auto;
+}
+
 .os-login h2 {
     text-align: center;
     margin-bottom: 10px;
@@ -138,12 +143,16 @@ img {
     font-size: 14px;
 }
 
+.os-input textarea ,
+.os-input select ,
 .os-input input {
     width: 100%;
     font-size: 17px;
     padding: 14px;
     border-radius: 10px;
     border: 1px solid transparent;
+    caret-color: var(--orginal);
+    resize: none;
 }
 
 .os-input input.error {
@@ -170,6 +179,15 @@ img {
     cursor: pointer;
 }
 
+.group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.group > div {
+    flex: 1;
+}
 /* style index */
 
 /* style tickets */
@@ -178,7 +196,7 @@ table {
     border-radius: 20px;
     margin: 200px auto;
     padding: 20px;
-    -webkit-margin-collapse: 0;
+    overflow: auto;
 }
 
 td,
@@ -202,8 +220,9 @@ tr {
     display: flex;
 }
 
-tbody:nth-child(even) {
+tbody tr:nth-child(2n+1) {
     background: var(--bg);
+    border-radius: 5px;
 }
 
 .os-true {
@@ -219,6 +238,7 @@ form button.btn_tbl {
     border-radius: 5px;
     background: var(--secendary);
     color: #ffffff;
+    cursor: pointer;
 }
 
 /* style tickets */
